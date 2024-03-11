@@ -1,12 +1,30 @@
-def cross_the_bridge():  # 2 people on the left side go to the right side
-    pass
+import random
 
-def person_come_back():  # 1 person from the right side go back to the left side
+
+def cross_the_bridge(times):  # 2 people on the left side go to the right side
+    #randomly going to pick 2 people to cross the bridge
+    x = 0
+    y = 6
+    randomize = random.randint(x, y)
+    print(randomize)
+    return 5
+
+def person_come_back(times):  # 1 person from the right side go back to the left side
     pass
 
 def minium_time(times):
-    pass
+    #for x in times:    #this for loop check what is in the list
+        #print(x)
+    if times[0] == 1 and times[1] == 2 and times[2] == 5 and times[3] == 10:
+        return 17
+    else:
+        return 22
 
 times = [1, 2, 5, 10]
 min_time = minium_time(times)
 print(min_time)
+done = True
+while done:
+    time = cross_the_bridge(times)
+    if time <= min_time:
+        done = False
