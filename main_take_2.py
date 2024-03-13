@@ -10,7 +10,7 @@ def cross_the_bridge(p1, p2, count):
         case 1:
             #if p1 < p2:
                 #total = 
-            addTime(total, p1, p2)     
+            #addTime(total, p1, p2)     
             print("Person 1 and Person 2 cross the bridge")
     print("In crossing the bridge function")
     print(p1)
@@ -24,8 +24,6 @@ def shortest_time(times):
     else:
         return 22
 
-def addTime(total, ):
-    pass
     
 p1 = input("Enter a number for person1: ")
 p2 = input("Enter a number for person2: ")
@@ -36,7 +34,7 @@ p4 = input("Enter a number for person4: ")
     #print("Person1 is faster")  it works p1 is faster than p4
 #print(p1)
 people_time = []
-total = 0
+
 people_time.append(int(p1))
 people_time.append(int(p2))
 people_time.append(int(p3))
@@ -45,6 +43,7 @@ people_time.append(int(p4))
 minium_time = shortest_time(people_time)
 print(minium_time)
 
+totalTime = 0
 done = True
 count = 0
 while done:
